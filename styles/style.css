@@ -1,5 +1,7 @@
 :root {
-    --default-bg: white;
+    --primary-color: #007BFF;
+    --border-color: #ccc;
+    --background-color: #ffebcd;
 }
 
 * {
@@ -8,6 +10,58 @@
     box-sizing: border-box;
 }
 
-td, th {
-    border: 1px solid;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to left, yellow, cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease-in-out; 
+    
+}
+
+
+header:hover {
+    background: linear-gradient(to right, cyan, yellow);
+}
+
+
+
+
+section {
+    border: 2px solid;
+    padding: 20px 30px;
+    margin: 20px 320px;
+    border-radius: 0 50px 0  50px;
+    
+}
+
+section:hover {
+    border: 3px blue outset;
+    border-radius: 50px 50px 50px 50px;
+    transition: all 2s ease-in-out;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px 100px;
+}
+
+img:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px 100px;
+    transition: all 1s ease-in-out;
+    
+}
+
+a {
+    text-decoration: none;
 }
